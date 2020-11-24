@@ -8,6 +8,7 @@ import {ProductDetailsComponent} from '../app/productdetails/productdetails.comp
 import {ContactusComponent} from '../app/contactus/contactus.component';
 import {LoginComponent} from '../app/login/login.component';
 import {RegisterComponent} from '../app/register/register.component';
+import {WishlistComponent} from '../app/wishlist/wishlist.component';
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
   { path: 'blogs',             component: BlogsComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'contactus',             component: ContactusComponent },
   { path: 'login',             component: LoginComponent },
   { path: 'register',             component: RegisterComponent },
+  { path: 'wishlist',             component: WishlistComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
