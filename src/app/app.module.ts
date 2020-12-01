@@ -10,12 +10,17 @@ import {LoginComponent} from '../app/login/login.component';
 import {RegisterComponent} from '../app/register/register.component';
 import {WishlistComponent} from '../app/wishlist/wishlist.component';
 import {DeclareComponent} from '../app/declare/declare.component';
+import {AdminComponent} from '../app/admin/admin.component';
+import {AdmintableComponent} from '../app/admintable/admintable.component';
+import {AdminblogComponent} from './adminblog/adminblog.component';
+import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +34,10 @@ import { MatInputModule } from '@angular/material/input';
     RegisterComponent,
     WishlistComponent,
     DeclareComponent,
+    AdminComponent,
+    AdmintableComponent,
+    UserprofileComponent,
+    AdminblogComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +47,7 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatInputModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
