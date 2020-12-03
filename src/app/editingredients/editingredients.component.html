@@ -29,22 +29,22 @@
               <p>Table List</p>
             </a>
           </li>
-          <li class="nav-item active ">
-            <a class="nav-link" href="./typography.html">
+          <li class="nav-item ">
+            <a class="nav-link" [routerLink]="['/adminblog']">
               <i class="material-icons">library_books</i>
               <p>Blogs</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
+            <a class="nav-link" [routerLink]="['/adminproducts']">
               <i class="material-icons">bubble_chart</i>
               <p>Products</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./map.html">
+          <li class="nav-item active ">
+            <a class="nav-link" [routerLink]="['/editingredients']">
               <i class="material-icons">location_ons</i>
-              <p>Maps</p>
+              <p>Ingredients</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -53,18 +53,7 @@
               <p>Notifications</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="./rtl.html">
-              <i class="material-icons">language</i>
-              <p>RTL Support</p>
-            </a>
-          </li>
-          <li class="nav-item active-pro ">
-            <a class="nav-link" href="./upgrade.html">
-              <i class="material-icons">unarchive</i>
-              <p>Upgrade to PRO</p>
-            </a>
-          </li>
+         
         </ul>
       </div>
     </div>
@@ -73,7 +62,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:;">Thêm Blog</a>
+            <a class="navbar-brand" href="javascript:;">Ingredients</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -139,18 +128,63 @@
         <div class="container-fluid">
           <!---->         
           <div class="alert alert-success">
-            <span>BLOG ĐÃ ĐĂNG</span>
+            <span>THÀNH PHẦN ĐÃ ĐĂNG</span>
+          </div>
+
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-header-tabs card-header-primary">
+                <div class="nav-tabs-navigation">
+                  <div class="nav-tabs-wrapper">
+                    <span class="nav-tabs-title">Tìm kiếm thành phần</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                  
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="profile">
+                        </div>
+                    </div>
+                    <div class="container mt-3">         
+                        <form action="/action_page.php">
+                            <div class="row">
+                                
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label for="ingredientname">Tên thành phần</label>
+                                    <input type="ingredientname" class="form-control" placeholder="Ingredient Name" id="ingredientname">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="ingredientname">Công dụng</label>
+                                  <select name="brand" class="custom-select mb-3">
+                                  
+                                      <option selected>Công dụng</option>
+                                      <option value="volvo">Volvo</option>
+                                      <option value="fiat">Fiat</option>
+                                      <option value="audi">Audi</option>
+                                  </select>
+
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary pull-right">Search</button>
+                        </form>
+                      </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-12">
             <div class="card">
               <div class="card-header card-header-tabs card-header-primary">
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
-                    <span class="nav-tabs-title">Sửa/Xóa Blog</span>
+                    <span class="nav-tabs-title">Sửa/Xóa thành phần</span>
                   </div>
                 </div>
               </div>
               <div class="card-body">
+                  
                 <div class="tab-content">
                   <div class="tab-pane active" id="profile">
                     <table class="table">
@@ -250,7 +284,7 @@
         </div>
           <!---->
           <div class="alert alert-warning">
-            <span>THÊM BLOG</span>
+            <span>THÊM THÀNH PHẦN</span>
           </div>
             <div class="col-md-12">
                 <div class="card">
@@ -333,7 +367,7 @@
         <div class="col-md-12"> 
             <div class="card">
               <div class="card-header card-header-primary">
-                <h4 class="card-title">Add Blog</h4>
+                <h4 class="card-title">Thêm thành phần</h4>
                 
               </div>
               <div class="card-body">
@@ -356,7 +390,7 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label class="bmd-label-floating">Tên Blog</label>
+                        <label class="bmd-label-floating">Tên thành phần</label>
                         <input type="text" class="form-control">
                       </div>
                     </div>
@@ -392,12 +426,13 @@
                       </div>
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary pull-right">UPDATE BLOG</button>
+                  <button type="submit" class="btn btn-primary pull-right">UPDATE THÀNH PHẦN</button>
                   <div class="clearfix"></div>
                 </form>
              
             </div>           
         </div>
+        
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
