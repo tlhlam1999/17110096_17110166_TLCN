@@ -16,6 +16,7 @@ import {AdminblogComponent} from './adminblog/adminblog.component';
 import {AddproductsComponent} from './addproducts/addproducts.component';
 import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {EditingredientsComponent} from './editingredients/editingredients.component';
+import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
 import {AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -45,7 +46,8 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     UserprofileComponent,
     AdminblogComponent,
     AddproductsComponent,
-    EditingredientsComponent
+    EditingredientsComponent,
+    SearchingredientsComponent,
   ],
   imports: [
     BrowserModule,
