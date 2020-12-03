@@ -16,6 +16,7 @@ import {AdminblogComponent} from './adminblog/adminblog.component';
 import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {AddproductsComponent} from './addproducts/addproducts.component';
 import {EditingredientsComponent} from './editingredients/editingredients.component';
+import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
   { path: 'blogs',             component: BlogsComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'adminblog',             component: AdminblogComponent },
   { path: 'addproducts',             component: AddproductsComponent },
   { path: 'editingredients',             component: EditingredientsComponent },
+  { path: 'searchingredients',             component: SearchingredientsComponent },
   
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
