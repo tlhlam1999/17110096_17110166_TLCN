@@ -1081,10 +1081,6 @@
     <div id="CustomerLoginForm">
       <form method="post" action="/account/login" id="customer_login" accept-charset="UTF-8"><input type="hidden" name="form_type" value="customer_login" /><input type="hidden" name="utf8" value="✓" />
 
-        
-
-        
-
         <label for="CustomerEmail" class="label--hidden">Search Ingredients</label>
         <input type="email" name="customer[email]" id="CustomerEmail" placeholder="Search Ingredients" autocorrect="off" autocapitalize="off" autofocus>
 
@@ -1097,8 +1093,29 @@
          
 
       </form>
+      <table class="shop_table cart wishlist_table">
+         <thead>
+           <tr>
+             <th class="product-remove"></th>
+             <th class="product-thumbnail"></th>
+             <th class="product-name"><span class="nobr">Product</span></th>
+             <th class="product-price"> <span class="nobr">Price</span></th>
+             <th class="product-stock-stauts"> <span class="nobr">Stock status</span> </th>
+             <th class="product-add-to-cart"></th>
+           </tr>
+         </thead>
+         <tbody class="wishlist-box">
+     
+         </tbody>
+         <tfoot>
+           <tr>
+             <td colspan="6">
+             </td>
+           </tr>
+         </tfoot>
+       </table>
     </div>
-
+    
     
     <div id="RecoverPasswordForm" style="display: none;">
 
