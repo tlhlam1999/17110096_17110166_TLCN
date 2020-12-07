@@ -17,6 +17,8 @@ import {UserprofileComponent} from '../app/userprofile/userprofile.component';
 import {AddproductsComponent} from './addproducts/addproducts.component';
 import {EditingredientsComponent} from './editingredients/editingredients.component';
 import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
+import {SearchproductsComponent} from './searchproducts/searchproducts.component';
+import {SearchblogsComponent} from './searchblogs/searchblogs.component';
 const routes: Routes = [
   { path: 'home',             component: HomeComponent },
   { path: 'blogs',             component: BlogsComponent },
@@ -35,6 +37,8 @@ const routes: Routes = [
   { path: 'addproducts',             component: AddproductsComponent },
   { path: 'editingredients',             component: EditingredientsComponent },
   { path: 'searchingredients',             component: SearchingredientsComponent },
+  { path: 'searchproducts',             component: SearchproductsComponent },
+  { path: 'searchblogs',             component: SearchblogsComponent },
   
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
