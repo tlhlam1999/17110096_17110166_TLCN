@@ -28,7 +28,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
-
+import { MatTableModule } from '@angular/material/table'
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 @NgModule({
   declarations: [
@@ -60,6 +60,7 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule,
     MatButtonModule,
     MatListModule,
     MatSelectModule
