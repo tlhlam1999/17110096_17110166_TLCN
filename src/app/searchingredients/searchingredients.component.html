@@ -1107,14 +1107,22 @@
       <div class="example-element-detail"
            [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
         <div class="example-element-diagram">
-          <div class="example-element-position"> {{element.position}} </div>
-          <div class="example-element-symbol"> {{element.symbol}} </div>
-          <div class="example-element-name"> {{element.name}} </div>
-          <div class="example-element-weight"> {{element.weight}} </div>
+          <div class="example-element-position"> 
+            <div class="text-align: center">{{element.position}} </div>
+         </div>
+          <div class="example-element-symbol"> 
+            <div class="text-align: center">{{element.symbol}} </div>
+          </div>
+          <div class="example-element-name"> 
+            <div class="text-align: center"> {{element.name}} </div>
+          </div>
+          <div class="example-element-weight"> 
+            <div class="text-align: center">{{element.weight}} </div>
+          </div>
         </div>
         <div class="example-element-description">
           {{element.description}}
-          <span class="example-element-description-attribution"> -- Wikipedia </span>
+         
         </div>
       </div>
     </td>

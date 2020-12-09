@@ -19,6 +19,7 @@ import {EditingredientsComponent} from './editingredients/editingredients.compon
 import {SearchingredientsComponent} from './searchingredients/searchingredients.component';
 import {SearchproductsComponent} from './searchproducts/searchproducts.component';
 import {SearchblogsComponent} from './searchblogs/searchblogs.component';
+import {AdminbrandsComponent} from './adminbrands/adminbrands.component';
 import {AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -30,6 +31,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table'
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { BrandService } from './adminbrands/shared/adminbrands.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +54,7 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     SearchingredientsComponent,
     SearchproductsComponent,
     SearchblogsComponent,
+    AdminbrandsComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +69,7 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     MatSelectModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-  providers: [],
+  providers: [BrandService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
