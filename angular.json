@@ -68,7 +68,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ProjectWithAngular:build"
+            "browserTarget": "ProjectWithAngular:build",
+            "proxyConfig":"src/proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -117,7 +118,8 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ProjectWithAngular:serve"
+            "devServerTarget": "ProjectWithAngular:serve",
+           
           },
           "configurations": {
             "production": {

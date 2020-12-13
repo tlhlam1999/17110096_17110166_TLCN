@@ -10,6 +10,8 @@ import {LoginComponent} from '../app/login/login.component';
 import {RegisterComponent} from '../app/register/register.component';
 import {WishlistComponent} from '../app/wishlist/wishlist.component';
 import {DeclareComponent} from '../app/declare/declare.component';
+import {HeaderComponent} from '../app/layout/header/header.component';
+import {FooterComponent} from '../app/layout/footer/footer.component';
 import {AdminComponent} from '../app/admin/admin.component';
 import {AdmintableComponent} from '../app/admintable/admintable.component';
 import {AdminblogComponent} from './adminblog/adminblog.component';
@@ -32,6 +34,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table'
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrandService } from './adminbrands/shared/adminbrands.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +58,8 @@ import { BrandService } from './adminbrands/shared/adminbrands.service';
     SearchproductsComponent,
     SearchblogsComponent,
     AdminbrandsComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +71,8 @@ import { BrandService } from './adminbrands/shared/adminbrands.service';
     MatTableModule,
     MatButtonModule,
     MatListModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [BrandService],
