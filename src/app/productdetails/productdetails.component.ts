@@ -8,6 +8,7 @@ import {ProductService} from "../allproducts/allproduct.service"
 })
 export class ProductDetailsComponent implements OnInit {
   public id:string
+  
     constructor(private router: Router,private service:ProductService ) {}
 
     ngOnInit() {
@@ -17,5 +18,6 @@ export class ProductDetailsComponent implements OnInit {
       const product = await this.service.getProduct("123")
       console.log(product)
       this.id = product["iD3code"]
+      
     }
 }
