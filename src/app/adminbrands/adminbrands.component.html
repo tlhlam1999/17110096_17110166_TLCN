@@ -365,26 +365,21 @@
               <div class="card-body">
                   
                 <form>
-                  
-                    <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-6">
                       <div class="form-group">
-                        <label class="bmd-label-floating">ID Thương hiệu</label>
+                        <label class="bmd-label-floating">Tên Thương hiệu</label>
                         <input type="text" class="form-control">
-                        <!--<input name="IDBrand" #IDBrand="ngModel" [(ngModel)]="service.IDBrand" class="form-control">
-                        -->
                         </div>
                     </div>
-                    
-                  
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Tên thương hiệu</label>
-                        <input type="text" class="form-control">
-                      </div>
+                    <div class="col-md-6">
+                      <select name="brand" class="custom-select mb-3">
+                                  
+                        <option selected>Enable</option>
+                        <option value="disable">Disable</option>
+                      </select>
                     </div>
-                 
-                  
-                  
+                  </div>
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Mô tả</label>
