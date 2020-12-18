@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
     providedIn: 'root'
 })
-export class AllProductService {
+export class HomeService {
     constructor(private http: HttpClient) {
     }
     private urlAPI = "api/Product/";
