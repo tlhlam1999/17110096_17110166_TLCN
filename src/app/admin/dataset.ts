@@ -45,14 +45,14 @@ export class Dataset {
     public static PTotal: Float32Array
     public static PMealHabit: Float32Array
     //Product
-    public static Id3Code:string=''    
-    public static IdBrandPro:string=''    
-    public static IdSkinPro:string=''    
-    public static NameProduct:string=''  
-    public static DescriptionPro:string=''    
-    public static ImagePro:string='' 
-    public static PointPro: Float32Array
-    public static DisabledPro:boolean;
+    public Id3Code:string=''    
+    public IdBrandPro:string=''    
+    public IdSkinPro:string=''    
+    public NameProduct:string=''  
+    public DescriptionPro:string=''    
+    public ImagePro:string='' 
+    public PointPro: Float32Array
+    public DisabledPro:boolean;
     //SkinType
     public static IdSkinType:string=''    
     public static NameSkinType:string=''    
