@@ -16,8 +16,115 @@
       <div class="">
           <div id="header-landing" class="sticky-animate">
       <div id="shopify-section-header-model-9" class="shopify-section">
+    
+<div class="top_bar top-bar-type-9" style="background:#075ac9;">  
+  <div class="container">
 
-<app-header></app-header>
+    <div class="grid__item">
+      <div class="header_social top_bar_left">
+
+
+        <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half small--one-half">  
+          <ul class="menu_topbar_right grid__item">                  
+             
+            <li class="header_currency">
+              <ul class="tbl-list">
+                <li class="currency dropdown-parent uppercase currency-block">            
+                  
+<div class="selector-arrow">
+<select class="currencies_src" id="currencies">
+  
+  
+  <option data-currency="USD"  selected  value="USD">USD</option> 
+  
+  
+  
+  <option data-currency="EUR"  value="EUR">EUR</option> 
+  
+  
+  
+  <option data-currency="GBP"  value="GBP">GBP</option> 
+  
+  
+  
+  <option data-currency="AUD"  value="AUD">AUD</option> 
+  
+  
+  
+  <option data-currency="INR"  value="INR">INR</option> 
+  
+   
+  
+  <option data-currency="JPY"  value="JPY">JPY</option> 
+  
+  
+  
+  <option data-currency="CAD"  value="CAD">CAD</option> 
+  
+  
+  
+  <option data-currency="CNY"  value="CNY">CNY</option> 
+  
+  
+  
+  <option data-currency="AED"  value="AED">AED</option> 
+  
+  
+  
+  <option data-currency="RUB"  value="RUB">RUB</option> 
+  
+</select>
+</div>
+
+
+
+
+
+                </li>
+              </ul>
+            </li>  
+                                 
+          </ul>
+        </div>  
+
+
+        <div class="grid__item wide--one-third post-large--one-third large--one-third medium-down--hide">  
+
+          
+          <ul class="menu_bar_left grid__item">          
+            <li class=" phone_txt"><span>Welcome to Kure-Demo.</span> </li>
+            <li class="notification_text"><span style="color:rgb(69, 206, 160);"></span>
+            <a class="link" href="">Shop Now</a>      
+        </li>
+          </ul>
+            
+
+        </div>
+
+        <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half small--one-half"> 
+
+          
+          <ul class="menu_bar_left grid__item">          
+            <li class="medium-down--hide phone_no"><span>Call us: 0123-456-789</span></li>    
+               
+            <li class="top-wish">
+              <a href="/pages/wishlist"><i class="fa fa-heart"></i>Wishlist</a>
+            </li>
+             
+          </ul>
+            
+
+        </div>
+
+
+
+
+      </div> 
+    </div>
+
+  </div>
+</div>
+ 
 </div>
 <div class="desktop-megamenu">
   <div id="shopify-section-navigation" class="shopify-section">
@@ -659,13 +766,13 @@
 
         
 
-        <label for="CustomerEmail" class="label--hidden">Email</label>
-        <input type="email" name="customer[email]" id="CustomerEmail" placeholder="Email" autocorrect="off" autocapitalize="off" autofocus>
+        <label for="CustomerEmail" class="label--hidden">Username</label>
+        <input type="email" name="customer[email]" id="uName" [(ngModel)]="this.Users.UserName" placeholder="Username" autocorrect="off" autocapitalize="off" autofocus>
 
         
 
           <label for="CustomerPassword" class="label--hidden">Password</label>
-          <input type="password" value="" name="customer[password]" id="CustomerPassword" placeholder="Password" >
+          <input type="password" value="" name="customer[password]" id="pass" [(ngModel)]="this.Users.Pass" placeholder="Password" >
 
           <p>
             <a href="#" onclick="showRecoverPasswordForm();return false;">Forgot your password?</a>
@@ -674,7 +781,7 @@
         
 
         <p>
-          <input type="submit" class="btn" value="Sign In">
+          <input type="submit" class="btn" value="Sign In" (click)="login()">
         </p>
           <p>
             <a [routerLink]="['/register']" >Create account</a>

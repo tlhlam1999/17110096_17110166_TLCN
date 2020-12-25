@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import {AllProductService} from "../allproducts/allproduct.service"
+import { UserLogin } from '../staticvariable';
 @Component({
     selector: 'app-allproducts',
     templateUrl: './allproducts.component.html',
@@ -14,10 +15,12 @@ export class AllproductsComponent implements OnInit {
   public DescriptionPro:string=''    
   public ImagePro:string='' 
   public PointPro: Float32Array
+  check:boolean
     constructor(private router: Router ,private service:AllProductService) {}
 
     ngOnInit() {
       this.getPath()
+      this.check=UserLogin.LoginState
     }
     async getPath(){
       const product = await this.service.getProduct("456")
