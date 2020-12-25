@@ -17,7 +17,7 @@
             </div>
             <h1 class="grid__item wide--one-third post-large--one-third large--one-third site-header__logo" itemscope itemtype="http://schema.org/Organization">
                <a  href="index.html" style="max-width: px;">
-               <img class="normal-logo" src="./src/assets/images/logo.png" itemprop="logo">
+               <img class="normal-logo" src="/assets/images/logo.png" itemprop="logo">
                </a>
             </h1>
             <ul class="menu_bar_right grid__item wide--one-third  post-large--one-third large--one-third small-grid__item">
@@ -33,7 +33,7 @@
                      </div>
                   </div>
                </li>
-               <li class="header-bar__module cart header_cart">
+               <li class="header-bar__module cart header_cart" *ngIf="this.check === false">
                   <!-- Mini Cart Start -->
                   <button type="button" [routerLink]="['/wishlist']" class="add-to-cart-btn btn">
                      <i class="fas fa-heart"></i> Wishlist
@@ -41,14 +41,19 @@
                   <!-- End Top Header -->  
                </li>
                <li class="act-details">   
-                  <a class="myact-detail">
-                 
+                  <a class="myact-detail" *ngIf="this.check === false">                 
                      <button type="button" [routerLink]="['/login']" class="add-to-cart-btn btn" >
                         Log in
                       </button>
-                     
                   </a>
                  
+                  <a class="left" *ngIf="this.check === true">
+                     <label>Hello: {{this.name}}</label>
+                     <img [src]="" style="width: 45px; height: 45px;" alt="">
+                     <button style="height: 30px;width: 100px;" type="button" [routerLink]="['/login']" >
+                        Log out
+                     </button>
+                  </a>
                </li>
                <li>
                   <div class="header-mobile">

@@ -35,6 +35,9 @@ import { MatTableModule } from '@angular/material/table'
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrandService } from './adminbrands/shared/adminbrands.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +75,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatListModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [BrandService],

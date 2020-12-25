@@ -93,7 +93,7 @@
           
           <ul class="menu_bar_left grid__item">          
             <li class=" phone_txt"><span>Welcome to Kure-Demo.</span> </li>
-            <li class="notification_text"><span style="color:;"></span>
+            <li class="notification_text"><span style="color:rebeccapurple"></span>
             <a class="link" href="">Shop Now</a>      
         </li>
           </ul>
@@ -926,20 +926,20 @@
 
       
 
-      <label for="FirstName" class="label--hidden">First Name</label>
-      <input type="text" name="customer[first_name]" id="FirstName" placeholder="First Name"  autocapitalize="words" autofocus>
+      <label for="FirstName" class="label--hidden" >First Name</label>
+      <input type="text" name="customer[first_name]" id="FirstName" placeholder="First Name" [(ngModel)]="this.Users.FirstName" autocapitalize="words" autofocus>
 
-      <label for="LastName" class="label--hidden">Last Name</label>
-      <input type="text" name="customer[last_name]" id="LastName" placeholder="Last Name"  autocapitalize="words">
+      <label for="LastName" class="label--hidden" id="lName">Last Name</label>
+      <input type="text" name="customer[last_name]" id="LastName" placeholder="Last Name" [(ngModel)]="this.Users.LastName" autocapitalize="words">
 
-      <label for="Email" class="label--hidden">Email</label>
-      <input type="email" name="customer[email]" id="Email" placeholder="Email"  autocorrect="off" autocapitalize="off">
+      <label for="Email" class="label--hidden" >Username</label>
+      <input type="email" name="customer[email]"  placeholder="UserName" id="uName" [(ngModel)]="this.Users.UserName"  autocorrect="off" autocapitalize="off">
 
       <label for="CreatePassword" class="label--hidden">Password</label>
-      <input type="password" name="customer[password]" id="CreatePassword" placeholder="Password" >
+      <input type="password" name="customer[password]" id="pass" [(ngModel)]="this.Users.Pass" placeholder="Password" >
 
       <p>
-        <input type="submit" value="Create" class="btn">
+        <input type="submit" (click)="register()"value="Create" class="btn">
       </p>
       <a [routerLink]="['/home']">Return to Store</a>
 
