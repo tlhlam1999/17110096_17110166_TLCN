@@ -328,67 +328,7 @@
               <div class="card-body">
                   
                 <form>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <select name="brand" class="custom-select mb-3">
-                                  
-                        <option selected>ID_topic</option>
-                        <option value="topic1">Topic 1</option>
-                        <option value="topic2">Topic 2</option>
-                      </select>
-                    </div>
-                    <div class="col-md-4">
-                      <select name="brand" class="custom-select mb-3">
-                                  
-                        <option selected>ID_user</option>
-                        <option value="user1">User 1</option>
-                        <option value="user2">User 2</option>
-                      </select>
-                    </div>
-                    <div class="col-md-4">
-                      <select name="brand" class="custom-select mb-3">
-                                  
-                        <option selected>ID_composer</option>
-                        <option value="com1">Composer 1</option>
-                        <option value="com2">Composer 2</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Heading</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <select name="brand" class="custom-select mb-3">
-                                  
-                        <option selected>Enable</option>
-                        <option value="disable">Disable</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="bmd-label-floating">Hình ảnh</label>
-                        <input type="text" class="form-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Nội dung</label>
-                        <div class="form-group">
-                    
-                          <textarea class="form-control" rows="5"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary pull-right">UPDATE BLOG</button>
+                  <button type="submit" class="btn btn-primary pull-right" (click)="openDialog()">Thêm Blog</button>
                   <div class="clearfix"></div>
                 </form>
              
