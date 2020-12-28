@@ -22,6 +22,8 @@ import {Adminblog} from '../adminblog.model'
             return false;
           }
         this.adminblog = new Adminblog()
+        this.adminblog.IDBlog="BLOG"+Math.floor(Math.random()*10000).toString()
+        this.adminblog.IDUser = "user1"
     }
     onSelectFile(event) {
         if (event.target.files && event.target.files[0]) {
@@ -69,7 +71,7 @@ import {Adminblog} from '../adminblog.model'
         }
       }
       refresh(): void {
-        this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/admin/addproduct';
+        this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/adminblog';
         this.m_router.navigateByUrl(this.m_returnUrl, {skipLocationChange:true});
         
         //window.location.reload();

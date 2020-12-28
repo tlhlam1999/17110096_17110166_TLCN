@@ -39,6 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import {AdminblogDialogComponent} from './adminblog/dialog-adminblog/dialog-adminblog.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +66,8 @@ import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
     AdminbrandsComponent,
     HeaderComponent,
     FooterComponent,
-    ProductDialogComponent
+    ProductDialogComponent,
+    AdminblogDialogComponent
   ],
   imports: [
     BrowserModule,

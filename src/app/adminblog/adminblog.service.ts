@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
     providedIn: 'root'
 })
 export class AdminblogService {
-    private urlAPI = 'api/Adminblog/';
+    private urlAPI = 'api/Blog/';
 
     constructor(private http: HttpClient) {
 
