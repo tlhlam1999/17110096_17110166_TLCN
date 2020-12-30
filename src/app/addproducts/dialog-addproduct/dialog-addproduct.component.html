@@ -1,0 +1,54 @@
+<h2><strong>THÊM SẢN PHẨM</strong></h2>
+<form class="example-form">
+    <label><strong>TÊN SẢN PHẨM</strong></label>
+    <mat-form-field class="example-full-width">
+        
+        <input matInput name="Name" type="text" id="input" required="required" [(ngModel)]="this.product.NameProduct" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <label><strong>CHỈ SỐ KÍCH ỨNG</strong></label>
+    <mat-form-field class="example-full-width">
+        
+        <input matInput name="Point" type="text" id="input" required="required" [(ngModel)]="this.product.PointProduct" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <label><strong>MÔ TẢ SẢN PHẨM</strong></label>
+    <mat-form-field class="example-full-width">
+        
+        <textarea style="height: 300px;" name="Description" type="text" id="input" required="required" [(ngModel)]="this.product.Description" [ngModelOptions]="{standalone: true}" matInput ></textarea>
+    </mat-form-field>
+    <label><strong>THÊM HÌNH ẢNH</strong></label>
+    <div class="form-group">
+       
+        <img [src]="url" height="200"> <br/>
+        <input type='file' accept="image/*" (change)="onSelectFile($event)">
+     </div>
+    <mat-label><strong>IDBrand</strong></mat-label>
+    <br/>
+    <select id="input" required="required" [(ngModel)]="this.product.IDBrand" [ngModelOptions]="{standalone: true}">
+        <option value="paula2020">paula2020</option>
+        <option value="laroche2020">laroche2020</option>
+        <option value="anessa2020">anessa2020</option>
+    </select>
+    <br/>
+
+    <mat-label><strong>IDSkintype</strong></mat-label>
+    <br/>
+    <select id="input" required="required" [(ngModel)]="this.product.IDSkintype" [ngModelOptions]="{standalone: true}">
+        <option value="dadau">dadau</option>
+        <option value="danhaycam">danhaycam</option>
+        <option value="dakho">dakho</option>
+    </select>
+    <br/> 
+
+    <mat-label><strong>DisabledPro</strong></mat-label>
+    <br/>
+    <select id="input" required="required" [(ngModel)]="this.product.DisabledPro" [ngModelOptions]="{standalone: true}">
+        <option value="true">true</option>
+        <option value="false">false</option>
+    </select> 
+</form>
+<br>
+<br>
+<div mat-dialog-actions class="myDiv">
+    <button class="btn btn-primary" mat-button (click)="onSave()">Save</button>
+    <button class="btn btn-danger left" mat-button (click)="onNoClick()">Cancel</button>
+</div>
