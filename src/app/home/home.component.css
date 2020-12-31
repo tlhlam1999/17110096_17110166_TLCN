@@ -96,6 +96,12 @@
 .header-type-9 .menu-tool ul li {
 	color: #35c7df
 }
+.site-nav{
+	font-size: 28px;
+}
+.site-menu2{
+	font-size: 20px;
+}
 
 .header-type-9 .menu-tool ul li a,
 .mobile-nav-section .mobile-nav-trigger {
@@ -393,7 +399,7 @@
 
 .header-mobile #showLeftPush {
 	display: inline-block;
-	font-size: 16px;
+	font-size: 50px;
 	text-align: center;
 	cursor: pointer;
 	height: 40px;
@@ -690,7 +696,7 @@
 	display: block;
 	margin-bottom: 7px;
 	font-weight: 500;
-	font-size: 11px;
+	font-size: 50px;
 	line-height: 1.5;
 	text-transform: uppercase;
 }
@@ -698,3 +704,4 @@
 .bottom-products-suggest .product-short-suggest .price del {
 	color: #D0D0D0;
 }
+

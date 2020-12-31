@@ -652,86 +652,80 @@
     <div class="grid__item">
       
       <div class="contact-form-section">
-        <h2><strong>KHAI BÁO TÌNH TRẠNG DA</strong></h2>
-        <form >
-        
-        <table mat-table  class="mat-elevation-z8" style="width:1000px;">
-          <table class="example-full-width" cellspacing="0"><tr>
-            
-            <td><mat-form-field class="example-full-width">
-              <mat-label>First name</mat-label>
-              <input matInput>
-            </mat-form-field></td>
-            <td><mat-form-field class="example-full-width">
-              <mat-label>Last Name</mat-label>
-              <input matInput>
-            </mat-form-field></td>
-          </tr></table>
-        
-          <mat-form-field appearance="fill">
-            <mat-label>Favorite Trà Vải</mat-label>
-            <mat-select [formControl]="animalControl" required>
-              <mat-option>--</mat-option>
-              <mat-option *ngFor="let animal of animals" [value]="animal">
-                {{animal.name}}
-              </mat-option>
-            </mat-select>
-            <mat-error *ngIf="!animals">Please choose Trà vải before thoát nha con đĩ</mat-error>
-            <mat-hint>{{animalControl.value?.sound}}</mat-hint>
-          </mat-form-field>
-            
-          <table class="example-full-width" cellspacing="0"><tr>
-            <td><mat-selection-list #shoes>
-               <mat-list-option *ngFor="let shoe of typesOfShoes">
-                 {{shoe}}
-               </mat-list-option>
-             </mat-selection-list>
-         </td>
-            <td><mat-selection-list #shoes>
-               <mat-list-option *ngFor="let shoe of typesOfShoes">
-                 {{shoe}}
-               </mat-list-option>
-             </mat-selection-list></td>
-             <td><mat-selection-list #shoes>
-               <mat-list-option *ngFor="let shoe of typesOfShoes">
-                 {{shoe}}
-               </mat-list-option>
-             </mat-selection-list></td>
-            
-          </tr></table>
-          <h3><strong>CHỌN TRÀ VẢI CHO KHỞI THÂN YÊU</strong></h3>
-          <mat-selection-list #shoes>
-            <mat-list-option *ngFor="let shoe of typesOfShoes">
-              {{shoe}}
-            </mat-list-option>
-          </mat-selection-list>
-          
-          <p>
-            Options selected: {{shoes.selectedOptions.selected.length}}
-          </p>
-        </table>
-        <button mat-flat-button color="primary">Submit Trà Vải</button>
-        </form>
-      </div>
-
-    </div>
-
-
-  </div>
-</div>
+         <h2><strong>KHAI BÁO DA</strong></h2>
+         <form class="example-form">
+            <div class="row">
+            <mat-label><strong>LOẠI DA</strong></mat-label>
+            <br/>
+             <select id="input" required="required" [(ngModel)]="this.declare.IDSkinType" [ngModelOptions]="{standalone: true}">
+                 <option value="dadau">Da dầu</option>
+                 <option value="dahh">Da hỗn hợp</option>
+                 <option value="dakho">Da Khô</option>
+                 <option value="danhaycam">Da nhạy cảm</option>
+             </select>
+             <br/> 
+            </div>
+             <mat-label><strong>LOẠI MỤN HAY NỔI</strong></mat-label>
+             <br/>
+             <select id="input" required="required" [(ngModel)]="this.declare.PAcneType" [ngModelOptions]="{standalone: true}">
+                 <option value="7">Mụn nang viêm</option>
+                 <option value="5">Mụn ẩn</option>
+                 <option value="3">Mụn đầu đen</option>
+                 <option value="1">Hầu như ít nổi mụn</option>
+             </select>
+             <br/> 
+         
+             <mat-label><strong>ĐÃ SỬ DỤNG MỸ PHẨM CHƯA</strong></mat-label>
+             <br/>
+             <select id="input" required="required" [(ngModel)]="this.declare.PPastUsing" [ngModelOptions]="{standalone: true}">
+                 <option value="7">Chưa</option>
+                 <option value="5">5 lần/tuần</option>
+                 <option value="3">Thỉnh thoảng</option>
+                 <option value="1">Thường xuyên</option>
+             </select>
+             <br/> 
+             <mat-label><strong>THÓI QUEN HẰNG NGÀY</strong></mat-label>
+             <br/>
+             <select id="input" required="required" [(ngModel)]="this.declare.PDailyHabit" [ngModelOptions]="{standalone: true}">
+                 <option value="7">Thức khuya, ăn đồ dầu mỡ, stress</option>
+                 <option value="5">Làm việc trong môi trường khói bụi</option>
+                 <option value="3">Ăn uống bình thường, thích gì ăn nấy</option>
+                 <option value="1">Ăn uống khoa học</option>
+             </select>
+             <br/> 
+             <mat-label><strong>THÓI QUEn ĂN UỐNG</strong></mat-label>
+             <br/>
+             <select id="input" required="required" [(ngModel)]="this.declare.PDailyHabit" [ngModelOptions]="{standalone: true}">
+                 <option value="7">Ăn đồ dầu mỡ, cay nóng</option>
+                 <option value="5">Ăn uống không đều độ</option>
+                 <option value="3">Ăn uống bình thường, thích gì ăn nấy</option>
+                 <option value="1">Ăn uống khoa học</option>
+             </select>
+             <br/>
+             <label><strong>THÊM HÌNH ẢNH</strong></label>
+               <div class="form-group">
+                  
+                  <img [src]="url" height="200"> <br/>
+                  <input type='file' accept="image/*" (change)="onSelectFile($event)">
+               </div>
+         </form>
+         <br>
+         <br>
+    
+             <button class="btn btn-primary" mat-button (click)="onSave()">Save</button>
+         
 
 	
              
           </div>  
           
-        </div>
-      </div>      
+
+   
       
     
     <div class="dt-sc-hr-invisible-large"></div>
     
-  </main>
-
+ 
 
   
   <div id="shopify-section-footer-model-5" class="shopify-section">

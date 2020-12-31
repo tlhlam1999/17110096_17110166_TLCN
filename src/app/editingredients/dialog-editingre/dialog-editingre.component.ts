@@ -2,27 +2,27 @@ import { Component, OnInit, ElementRef, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import {ProductService} from '../product.service'
-import {Product} from '../product.model'
+import {EditingredientsService} from '../editingredients.service'
+import {IngredientDetails} from '../editingredients.model'
 @Component({
-    selector: 'app-dialog-addproduct',
-    templateUrl: './dialog-addproduct.component.html',
-    styleUrls: ['./dialog-addproduct.component.css']
+    selector: 'app-dialog-editingre',
+    templateUrl: './dialog-editingre.component.html',
+    styleUrls: ['./dialog-editingre.component.css']
   })
-  export class ProductDialogComponent implements OnInit {
+  export class EditingredientsDialogComponent implements OnInit {
     public Image: File
     public m_returnUrl: string;
     url;
-    public product : Product
-    constructor(public dialogRef: MatDialogRef<ProductDialogComponent>, private elementRef: ElementRef, @Inject(DOCUMENT) private doc,
-      private service: ProductService,private m_route: ActivatedRoute,private m_router: Router) {
+    public editingre : IngredientDetails
+    constructor(public dialogRef: MatDialogRef<EditingredientsDialogComponent>, private elementRef: ElementRef, @Inject(DOCUMENT) private doc,
+      private service: EditingredientsService,private m_route: ActivatedRoute,private m_router: Router) {
     }
     async ngOnInit() {
         this.m_router.routeReuseStrategy.shouldReuseRoute = () =>{
             return false;
           }
-        this.product = new Product()
-        this.product.ID3code="Pro"+Math.floor(Math.random()*10000).toString()
+        this.editingre = new IngredientDetails()
+        this.editingre.IDIngre="Ingre"+Math.floor(Math.random()*10000).toString()
     }
     onSelectFile(event) {
         if (event.target.files && event.target.files[0]) {
@@ -43,19 +43,15 @@ import {Product} from '../product.model'
       }
       async onSave(){
         try{
-          
           const formData = new FormData();
           if (Image) {
-            formData.append('image', this.Image);
-            formData.append('description',this.product.Description)
-            formData.append('linktobuy',this.product.Linktobuy)
-            formData.append('nameProduct',this.product.NameProduct)
-            formData.append('pointProduct',this.product.PointProduct.toString())
-            formData.append('disabledPro',this.product.DisabledPro.toString())
-            formData.append('iD3code',this.product.ID3code)
-            formData.append('idBrand',this.product.IDBrand)
-            formData.append('idSkintype',this.product.IDSkintype)
-            this.service.createTrip(formData);
+            formData.append('idIngre', this.editingre.IDIngre);
+            formData.append('nameIngre',this.editingre.NameIngre)
+            formData.append('uses',this.editingre.Uses)
+            formData.append('function',this.editingre.Function)
+            formData.append('pointIngre',this.editingre.PointIngre.toString())
+            this.editingre.IDIngre
+            this.service.createIngredients(formData);
             alert("Create succesfully !")
             this.onNoClick()
             this.refresh()
@@ -71,7 +67,7 @@ import {Product} from '../product.model'
         }
       }
       refresh(): void {
-        this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/admin/addproduct';
+        this.m_returnUrl = this.m_route.snapshot.queryParams['returnUrl'] || '/editingredients';
         this.m_router.navigateByUrl(this.m_returnUrl, {skipLocationChange:true});
         
         //window.location.reload();
