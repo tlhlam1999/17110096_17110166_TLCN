@@ -45,6 +45,10 @@
         <option value="true">true</option>
         <option value="false">false</option>
     </select> 
+    <label><strong>LINK MUA HÀNG</strong></label>
+    <mat-form-field class="example-full-width">
+        <textarea style="height: 300px;" name="Linktobuy" type="text" id="input" required="required" [(ngModel)]="this.product.Linktobuy" [ngModelOptions]="{standalone: true}" matInput ></textarea>
+    </mat-form-field>
 </form>
 <br>
 <br>

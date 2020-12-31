@@ -7,4 +7,5 @@ export class Product {
     Description:string;
     PointProduct:number;
     DisabledPro:boolean;
+    Linktobuy:string;
 }
