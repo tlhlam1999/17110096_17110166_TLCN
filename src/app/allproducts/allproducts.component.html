@@ -644,67 +644,51 @@
    </div>
 </div>
 <main class="main-content">
-   <div class="dt-sc-hr-invisible-large"></div>
-   <div class="wrapper">
-      <div class="grid-uniform">
-         <div class="grid__item">
-            <div class="container">
-               <div class="grid__item">
-                  <div class="collection-products position-change">
-                     
-                     <div class="collection_grid_template second">
-                        <div id="shopify-section-collection-template" class="shopify-section">
-                           <div class="grid__item sidebar-hidden">
-                              <div class="collection-list">
-                                 <div class="grid-uniform grid-link__container col-main">
-                     
-                                    <div class="products-grid-view">
-                                       <ul>
-                                          <li class="grid__item item-row  wide--one-quarter post-large--one-third large--one-half medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2240996147264" *ngFor="let product of productlist">
-                                             <div class="products product-hover-12">
-                                                <div class="product-container">
-                                                   <a (click)="this.getNavigation(product.ID3code)" [routerLink]="['/productdetails/:', product.ID3code]" class="grid-link">
-                                                      <div class="ImageOverlayCa"></div>
-                                                      <img [src]="this.getImageSource(product.Image)" style="height: 200px;width: 200px;" class="featured-image" alt="Calories Meter">
-                                                   </a>
-                                                   <div class="product_right_tag  ">
-                                                   </div>
-                                                 
-                                                </div>
-                                                <div class="product-detail">
-                                                   <a href="https://kure-demo.myshopify.com/collections/all/products/calories-meter" class="grid-link__title">{{product.NameProduct}}</a> 
-                                                   <div class="grid-link__meta">
-                                                      <div class="product_price">
-                                                         <div class="grid-link__org_price" id="ProductPrice">
-                                                            <span> <span class=money><i class="fas fa-seedling"></i> {{product.PointProduct}}</span></span>
-                                                         </div>
-                                                      </div>
-                                                   </div>
-                                                   <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240996147264">                                    
-                                                      <input type="hidden" name="id" value="21095997964352" />  
-                                                      <a href="{{product.Linktobuy}}" class="add-cart-btn btn">
-                                                      <i class="fas fa-shopping-cart"></i>Link to buy
-                                                      </a>
-                                                   </form>
-                                                </div>
-                                             </div>
-                                          </li>
-                                          
-                                         
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+   <div class="section-header section-header--small wow fadeInDown animated ">
+      <div class="border-title">
+         <h2 class="section-header__title" style="color:rgb(128, 9, 88);" class="site-menu2">    
+            Products
+         </h2>
+        
+      </div>
+   </div>
+   <div class="grid-uniform">
+      <div class="products-grid-view">
+<ul>
+   <li class="grid__item item-row  wide--one-quarter post-large--one-third large--one-half medium--one-half small-grid__item  medium--one-half small--one-half  " id="product-2240996147264" *ngFor="let product of productlist">
+      <div class="products product-hover-9">
+         <div class="product-container">
+            <a (click)="this.getNavigation(product.ID3code)" [routerLink]="['/productdetails/:', product.ID3code]" class="grid-link">
+               <div class="ImageOverlayCa"></div>
+               <img [src]="this.getImageSource(product.Image)" style="height: 200px;width: 200px;" class="featured-image" alt="Calories Meter">
+            </a>
+            <div class="product_right_tag  ">
+            </div>
+            
+         </div>
+         <div class="product-detail">
+            <a href="https://kure-demo.myshopify.com/collections/all/products/calories-meter" class="grid-link__title">{{product.NameProduct}}</a> 
+            <div class="grid-link__meta">
+               <div class="product_price">
+                  <div class="grid-link__org_price" id="ProductPrice">
+                     <span> <span class=money><i class="fas fa-seedling"></i> {{product.PointProduct}}</span></span>
                   </div>
                </div>
             </div>
+            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240996147264">                                    
+               <input type="hidden" name="id" value="21095997964352" />  
+               <a href="{{product.Linktobuy}}" class="add-cart-btn btn">
+               <i class="fas fa-shopping-cart"></i>Link to buy
+               </a>
+            </form>
          </div>
       </div>
+   </li>
+   
+  
+</ul>
+</div>
    </div>
-   <div class="dt-sc-hr-invisible-large"></div>
 </main>
 <div id="shopify-section-footer-model-5" class="shopify-section">
    <div data-section-id="footer-model-5"  data-section-type="Footer-model-5" class="footer-model-5">

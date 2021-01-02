@@ -55,6 +55,7 @@ import {Product} from '../product.model'
             formData.append('iD3code',this.product.ID3code)
             formData.append('idBrand',this.product.IDBrand)
             formData.append('idSkintype',this.product.IDSkintype)
+            formData.append('idProductType',this.product.IDProductType)
             this.service.createTrip(formData);
             alert("Create succesfully !")
             this.onNoClick()
