@@ -1,17 +1,17 @@
-<div id="PageContainer"></div>
-<div class="quick-view"></div>
-<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left " id="cbp-spmenu-s1">
-   <div class="gf-menu-device-wrapper">
-      <div class="close-menu">x</div>
-      <div class="gf-menu-device-container"></div>
-   </div>
-</nav>
-<div class="wrapper-container">
-   <div class="header-type-9">
-      <div class="">
-          <div id="header-landing" class="sticky-animate">
-      <div id="shopify-section-header-model-9" class="shopify-section">
-
+        
+                  <div id="PageContainer"></div>
+                  <div class="quick-view"></div>
+                  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left " id="cbp-spmenu-s1">
+                     <div class="gf-menu-device-wrapper">
+                        <div class="close-menu">x</div>
+                        <div class="gf-menu-device-container"></div>
+                     </div>
+                  </nav>
+                  <div class="wrapper-container">
+                     <div class="header-type-9">
+                        <div class="">
+                           <div id="header-landing" class="sticky-animate">
+                              <div id="shopify-section-header-model-9" class="shopify-section">
                <app-header></app-header>
             </div>
             <div class="desktop-megamenu">
@@ -24,7 +24,7 @@
                                  <li class=" ">
                                     <a  href="index.html" class="current" class="site-nav">
                                     <span>         
-                                    Trang chủ     
+                                    TRANG CHỦ    
                                     </span>       
                                     </a> 	
                                  </li>
@@ -202,6 +202,7 @@
                                        </div>
                                     </div>
                                  </li>
+
                                  <li class=" dropdown  mega-menu ">
                                     <a  [routerLink]="['/blogs']" class="site-nav">
                                     <span>         
@@ -318,6 +319,17 @@
       </div>
    </div>
 </div>
+<div class="grid-uniform">
+   <div class="grid__item">
+      <div class="slider" id="main-slider"><!-- outermost container element -->
+         <div class="slider-wrapper"><!-- innermost wrapper element -->
+            <img src="/assets/images/laroche.jpg" alt="First" class="slide" /><!-- slides -->
+            <img src="/assets/images/obagi.jpg" alt="Second" class="slide" />
+            <img src="/assets/images/paula.jpg" alt="Third" class="slide" />
+         </div>
+      </div>
+   </div>
+</div>
 <main class="main-content">
    <div class="section-header section-header--small wow fadeInDown animated ">
       <div class="border-title">
@@ -342,21 +354,23 @@
             
          </div>
          <div class="product-detail">
-            <a href="https://kure-demo.myshopify.com/collections/all/products/calories-meter" class="grid-link__title">{{product.NameProduct}}</a> 
+            <a href="https://kure-demo.myshopify.com/collections/all/products/calories-meter" class="grid-link__title" style="font-size: 20px;">{{product.NameProduct}}</a> 
             <div class="grid-link__meta">
                <div class="product_price">
                   <div class="grid-link__org_price" id="ProductPrice">
-                     <span> <span class=money><i class="fas fa-seedling"></i> {{product.PointProduct}}</span></span>
+                     
+                     <button class="btn" ><i class="fas fa-seedling"></i> Chỉ số kích ứng: {{product.PointProduct}}</button>
+         
                   </div>
+                  
                </div>
+               
             </div>
-            <form  action="https://kure-demo.myshopify.com/cart/add" method="post" class="variants clearfix" id="cart-form-2240996147264">                                    
-               <input type="hidden" name="id" value="21095997964352" />  
-               <a href="{{product.Linktobuy}}" class="add-cart-btn btn">
-               <i class="fas fa-shopping-cart"></i>Link to buy
-               </a>
-            </form>
+            <button class="button1">{{product.NameProductType}}</button>
+            
+            
          </div>
+          
       </div>
    </li>
    
