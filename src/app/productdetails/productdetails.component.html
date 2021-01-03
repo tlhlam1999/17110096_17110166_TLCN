@@ -9,54 +9,542 @@
 <div class="wrapper-container">
    <div class="header-type-9">
       <div class="">
-         <div id="header-landing" class="sticky-animate">
-            <div id="shopify-section-header-model-9" class="shopify-section">
-               <div class="top_bar top-bar-type-9" style="background:#075ac9;">
-                  <div class="container">
-                     <div class="grid__item">
-                        <div class="header_social top_bar_left">
-                           <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half small--one-half">
-                              <ul class="menu_topbar_right grid__item">
-                                 <li class="header_currency">
-                                    <ul class="tbl-list">
-                                       <li class="currency dropdown-parent uppercase currency-block">
-                                          <div class="selector-arrow">
-                                             <select class="currencies_src" id="currencies">
-                                                <option data-currency="USD"  selected  value="USD">USD</option>
-                                                <option data-currency="EUR"  value="EUR">EUR</option>
-                                                <option data-currency="GBP"  value="GBP">GBP</option>
-                                                <option data-currency="AUD"  value="AUD">AUD</option>
-                                                <option data-currency="INR"  value="INR">INR</option>
-                                                <option data-currency="JPY"  value="JPY">JPY</option>
-                                                <option data-currency="CAD"  value="CAD">CAD</option>
-                                                <option data-currency="CNY"  value="CNY">CNY</option>
-                                                <option data-currency="AED"  value="AED">AED</option>
-                                                <option data-currency="RUB"  value="RUB">RUB</option>
-                                             </select>
-                                          </div>
+          <div id="header-landing" class="sticky-animate">
+      <div id="shopify-section-header-model-9" class="shopify-section">
+
+<app-header></app-header>
+</div>
+<div class="desktop-megamenu">
+  <div id="shopify-section-navigation" class="shopify-section">
+     <div class="nav-bar-mobile">
+        <nav class="nav-bar" role="navigation">
+           <div class="site-nav-dropdown_inner">
+              <div class="menu-tool">
+               <ul class="site-nav">
+                  <li class=" ">
+                     <a  href="index.html" class="current" class="site-nav">
+                     <span>         
+                     TRANG CHỦ    
+                     </span>       
+                     </a> 	
+                  </li>
+                  <li class=" dropdown  mega-menu ">
+                     <a  [routerLink]="['/allproducts']" class="site-nav">
+                     <span>         
+                     THƯƠNG HIỆU    
+                     </span>       
+                     </a> 	
+                     <div class="site-nav-dropdown">
+                        <div class="container   style_3">
+                           <div class="col-1 parent-mega-menu">
+                              <div class="inner col-xs-12 col-sm-4">
+                                 
+                                 <ul class="dropdown">
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a [routerLink]="['/allproducts']" class="brand">
+                                       Bioderma 
+                                       </a>
+                                    </li>
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a href="products/calories-meter" class="brand">
+                                       Anessa 
+                                       </a>
+                                    </li>
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a href="products/calories-meter" class="brand">
+                                       Cosrx 
+                                       </a>
+                                    </li>
+                                       <!-- Menu level 3 -->
+                                       <li>
+                                          <a href="products/calories-meter" class="brand">
+                                          Dermalogica
+                                          </a>
                                        </li>
-                                    </ul>
-                                 </li>
-                              </ul>
+                                 </ul>
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                
+                                 <ul class="dropdown">
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a href="products/calories-meter" class="brand">
+                                       Exuviance
+                                       </a>
+                                    </li>
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a href="products/calories-meter" class="brand">
+                                       Paula's Choice
+                                       </a>
+                                    </li>
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a href="products/calories-meter" class="brand">
+                                       Klairs
+                                       </a>
+                                    </li>
+                                 
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a href="products/calories-meter" class="brand">
+                                       L'oreal
+                                       </a>
+                                    </li>
+                                    
+                                 </ul>
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 
+                                 <ul class="dropdown">
+                                    <!-- Menu level 3 -->
+                                    <li>
+                                       <a href="products/celsius-meter" class="brand">
+                                       La Roche-posay 
+                                       </a>
+                                    </li>
+                                     <!-- Menu level 3 -->
+                                     <li>
+                                       <a href="products/celsius-meter" class="brand">
+                                       Maybelline 
+                                       </a>
+                                       </li>
+                                       <!-- Menu level 3 -->
+                                     <li>
+                                       <a href="products/celsius-meter" class="brand">
+                                       Neostrata
+                                       </a>
+                                    </li>
+                                      <!-- Menu level 3 -->
+                                      <li>
+                                       <a href="products/celsius-meter" class="brand">
+                                       Obagi
+                                       </a>
+                                    </li>
+                                   
+                                 </ul>
+                              </div>
+                              
                            </div>
-                           <div class="grid__item wide--one-third post-large--one-third large--one-third medium-down--hide">
-                              <ul class="menu_bar_left grid__item">
-                                 <li class=" phone_txt"><span>Welcome to Kure-Demo.</span> </li>
-                                 <li class="notification_text"><span style="color:rgb(69, 206, 160);"></span>
-                                    <a class="link" href="face-mask">Shop Now</a>      
-                                 </li>
-                              </ul>
-                           </div>
-                           <div class="grid__item wide--one-third post-large--one-third large--one-third medium--one-half small--one-half">
-                              <ul class="menu_bar_left grid__item">
-                                 <li class="medium-down--hide phone_no"><span>Call us: 0123-456-789</span></li>
-                                 <li class="top-wish">
-                                    <a href="../pages/wishlist"><i class="fa fa-heart"></i>Wishlist</a>
-                                 </li>
-                              </ul>
+                           <div class="col-2">
+                              <div class="col-left">
+                                 <div class="widget-featured-product ">
+                                    <div class="widget-product">
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-right">
+                                 <a [routerLink]="['/allproducts']" title="">
+                                 <img src="/assets/images/th.jpg" alt="" />
+                                 </a>
+                              </div>
                            </div>
                         </div>
                      </div>
+                  </li>
+                  <li class=" dropdown  mega-menu ">
+                     <a  [routerLink]="['/allproducts']" class="site-nav">
+                     <span>         
+                     CHĂM SÓC DA
+                     </span>       
+                     </a> 	
+                     <div class="site-nav-dropdown">
+                        <div class="container   style_4">
+                           <div class="col-1 parent-mega-menu">
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/calories-meter" class="site-menu2">
+                                 LÀM SẠCH & TẨY DA CHẾT 
+                                 </a>
+                                
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/cleaning-scissor" class="site-menu2">
+                                  ĐẶC TRỊ
+                                 </a>
+                                
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/calories-meter" class="site-menu2">
+                                 CẤP ẨM - KHÓA ẨM 
+                                 </a>
+                                 
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/calories-meter" class="site-menu2">
+                                 CHỐNG NẮNG 
+                                 </a>
+                                
+                              </div>
+
+                             
+                           </div>
+                          
+                        </div>
+                        <div class="col-wide">
+                           <div class="bottom_left">          
+                              <a [routerLink]="['/allproducts']" title="">
+                              <img src="/assets/images/all1.jpg" alt="" />
+                              </a>
+                           </div>
+                           <div class="bottom_right">          
+                              <a [routerLink]="['/allproducts']" title="">
+                              <img src="/assets/images/all2.jpg" alt="" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+
+                  <li class=" dropdown  mega-menu ">
+                     <a  [routerLink]="['/blogs']" class="site-nav">
+                     <span>         
+                     ĐÁNH GIÁ  
+                     </span>       
+                     </a> 	
+                     <div class="site-nav-dropdown">
+                        <div class="container   style_5">
+                           <div class="col-1 parent-mega-menu">
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/calories-meter" class=" ">
+                                 Lời khuyên bác sĩ 
+                                 </a>
+                                 
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/celsius-meter" class=" ">
+                                 Cảm nhận sản phẩm 
+                                 </a>
+                                 
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/cleaning-scissor" class=" ">
+                                 Đánh giá của người dùng 
+                                 </a>
+                                 
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  href="products/celsius-meter" class=" ">
+                                 Các shop & spa uy tín 
+                                 </a>
+                                
+                              </div>
+                           </div>
+                           
+                        </div>
+                        <div class="col-wide">
+                           <div class="bottom_left">          
+                              <a [routerLink]="['/blogs']" title="">
+                              <img src="/assets/images/review.jpg" alt="" />
+                              </a>
+                           </div>
+                           <div class="bottom_right">          
+                              <a [routerLink]="['/blogs']" title="">
+                              <img src="/assets/images/shop.jpg" alt="" />
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class=" dropdown  mega-menu ">
+                     <a  href="collections/new-offers" class="site-nav">
+                     <span>         
+                     TÌM KIẾM 
+                     </span>       
+                     </a> 	
+                     <div class="site-nav-dropdown">
+                        <div class="container   style_2">
+                           <div class="col-1 parent-mega-menu">
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  [routerLink]="['/searchproducts']" class="site-menu2">
+                                 Tìm sản phẩm 
+                                 </a>
+                              
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  [routerLink]="['/searchingredients']" class="site-menu2">
+                                 Tra cứu thành phần 
+                                 </a>
+                                 
+                              </div>
+                              <div class="inner col-xs-12 col-sm-4">
+                                 <!-- Menu level 2 -->
+                                 <a  [routerLink]="['/searchblogs']" class="site-menu2">
+                                    Tìm kiếm Blogs
+                                 </a>
+                                 
+                              </div>
+                           
+                           </div>
+                           <div class="col-2">
+                              
+                           
+                                 <a href="index.html" title="">
+                                 <img src="https://cdn.shopify.com/s/files/1/0188/0503/0976/files/megamenu1_2000x.jpg?v=1574920834" alt="" />
+                                 </a>
+                             
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="">
+                     <a class="menu__moblie"  [routerLink]="['/declare']" class="site-nav">
+                     <span>         
+                     KHAI BÁO DA     
+                     </span>       
+                     </a> 	
+                     
+                  </li>
+               </ul>
+              </div>
+           </div>
+        </nav>
+     </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  
+ 
+  <main class="main-content">  
+
+<div class="dt-sc-hr-invisible-large"></div> 
+  
+    
+    <div class="wrapper">
+            
+      <div class="grid-uniform">
+        <div class="grid__item">  
+           
+          <div class="container">
+            
+            <div class="position-change">
+
+
+
+
+<div class="grid__item wide--one-fifth post-large--one-quarter">
+     
+<div class="product_sidebar">  
+  <div id="shopify-section-sidebar-category" class="shopify-section">  
+    <div class="widget widget_product_categories">
+      
+      <h4>
+        Category
+      </h4>  
+      
+      
+      <ul class="product-categories dt-sc-toggle-frame-set">
+        
+                     
+        
+        <li class="cat-item cat-item-39 cat-parent first">
+          <i></i>
+          <a class="" href="calories-meter">Support Stick</a> <span class="dt-sc-toggle"></span>
+
+                  
+          <ul class="children dt-sc-toggle-content ">
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="calories-meter">Captcha</a>
+               
+              
+              
+            
+            </li>
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="cleaning-scissor">Generic</a>
+               
+              
+              
+            
+            </li>
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="cleaning-scissor">Sagarh</a>
+               
+              
+              
+            
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        
+                     
+        
+        <li class="cat-item cat-item-39 cat-parent">
+          <i></i><a class=" " href="calories-meter">Digital Thermometer</a> 
+        </li>
+        
+        
+                     
+        
+        <li class="cat-item cat-item-39 cat-parent">
+          <i></i><a class=" " href="dental-floss-box">Eat Thermometer</a> 
+        </li>
+        
+        
+                     
+        
+        <li class="cat-item cat-item-39 cat-parent">
+          <i></i><a class=" " href="digital-thermometer">Pedometer</a> 
+        </li>
+        
+        
+                     
+        
+        <li class="cat-item cat-item-39 cat-parent first">
+          <i></i>
+          <a class="" href="celsius-meter">Wheel Chair</a> <span class="dt-sc-toggle"></span>
+
+                  
+          <ul class="children dt-sc-toggle-content ">
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="celsius-meter">Arcatron</a>
+               
+              
+              
+            
+            </li>
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="dental-floss-box">Fastwell</a>
+               
+              
+              
+            
+            </li>
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="cleaning-scissor">Vissco</a>
+               
+              
+              
+            
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        
+                     
+        
+        <li class="cat-item cat-item-39 cat-parent first">
+          <i></i>
+          <a class="" href="celsius-meter">Bandage</a> <span class="dt-sc-toggle"></span>
+
+                  
+          <ul class="children dt-sc-toggle-content ">
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="cleaning-scissor">Flamingo</a>
+               
+              
+              
+            
+            </li>
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="celsius-meter">Medigrip</a>
+               
+              
+              
+            
+            </li>
+            
+               
+            <li class="second">
+              <i></i>             
+              <a class="" href="calories-meter">Top Grip</a>
+               
+              
+              
+            
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+    
+
+
+</div>   
+  <div id="shopify-section-product-sidebar-deals" class="shopify-section">
+<div data-section-id="product-sidebar-deals"  data-section-type="product-sidebar-deals" class="product-sidebar-deals">  
+    <div class="widget widget_top_rated_products">
+       
+      
+      <h4><span>Hot Deals</span></h4>  
+      
+      
+      <div class="widget_top_rated_products-section">
+      <ul class="no-bullets sidebar-deal-products owl-carousel owl-theme">
+       
+        <li> 
+          
+            
+          <a class="thumb grid__item" href="digital-pressure-machine">                                          
+            <img alt="featured product" src="https://cdn.shopify.com/s/files/1/0188/0503/0976/products/pdt2.jpg?v=1547027949">                                              
+          
+     
+            </a>
+           
+          <div class="products">
+          <div class="top-products-detail product-detail grid__item"> 
+                  <div class="product_left">
+            <a class="grid-link__title" href="digital-pressure-machine"> Digital Pressure Machine </a>
+            <span class="shopify-product-reviews-badge" data-id="2241007353920"></span>
+                    
+
+
+            </div>
+            <div class="top-product-prices grid-link__meta">
+              
+              <div class="product_price">
+                <div class="grid-link__org_price">
+                <span class=money>$329.00</span>
                   </div>
                </div>
                <header class="site-header">
