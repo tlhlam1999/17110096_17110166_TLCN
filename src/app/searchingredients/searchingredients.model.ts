@@ -1,4 +1,4 @@
-export class Declare {
+export class IngredientDetails {
     IDIngre:string;
     NameIngre:string;
     Uses:string;
